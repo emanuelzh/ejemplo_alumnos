@@ -17,7 +17,7 @@ class AlumnosController extends Controller
     public function index()
     {
         //
-        return view('alumnos/index');
+        return view('alumnos.index');
     }
 
     /**
@@ -50,6 +50,7 @@ class AlumnosController extends Controller
     public function show($id)
     {
         //
+        return view('alumnos.show');
     }
 
     /**

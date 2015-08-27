@@ -19,7 +19,7 @@
                         <td>Economia</td>
                         <td>4</td>
                         <td>
-                            <a class="btn btn-sm btn-info" href="{{url('alumno/1')}}"><i class="fa fa-eye"></i> Detalle</a>
+                            <a class="btn btn-sm btn-info" href="{{url('alumnos/1')}}"><i class="fa fa-eye"></i> Detalle</a>
                         </td>
                     </tr>
                     </tbody>
