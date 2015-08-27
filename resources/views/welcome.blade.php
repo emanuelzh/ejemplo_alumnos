@@ -12,7 +12,6 @@
                 <div class="col-md-12 col-lg-12">
                     <h2>Alumnos</h2>
                     <hr>
-                    
                 </div>
             </div>
         </div>
