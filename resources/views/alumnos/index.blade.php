@@ -1,4 +1,4 @@
-@include('main')
+@extends('main')
 
 @section('contenido')
     <div class="row">
