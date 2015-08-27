@@ -12,7 +12,7 @@
             <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="#">Skilltest</a>
+                        <a class="navbar-brand" href="{{url('/')}}">Skilltest</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
