@@ -12,5 +12,11 @@ var elixir = require('laravel-elixir');
  */
 
 elixir(function(mix) {
-    mix.sass('app.scss');
+
+ //mezcla el css
+ mix.styles([
+     'bower_components/bootstrap/dist/css/bootstrap.min.css',
+     'main.css'
+ ],'public/css/main.css','resources/assets');
+
 });
