@@ -17,6 +17,12 @@
 Route::get('/','AlumnosController@index');
 
 /**
+ * rutas para aplicar la beca
+ */
+Route::get('alumnos/{id}/beca','AlumnosController@beca');
+Route::post('alumnos/{id}/beca','AlumnosController@aplicar_beca');
+
+/**
  * Resource para alumno
  */
 Route::resource('alumnos','AlumnosController');

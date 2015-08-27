@@ -86,4 +86,11 @@ class AlumnosController extends Controller
     {
         //
     }
+
+    /**
+     * muestra el formulario para aplicar una beca
+     */
+    public function beca($id) {
+        return view('alumnos.beca');
+    }
 }

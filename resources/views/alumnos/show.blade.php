@@ -18,7 +18,7 @@
                     <button type="button" class="close" data-dismiss="alert">×</button>
                     <h4>Nota</h4>
                     <p>Este alumno califica para mantener una beca del <strong>50%</strong>.</p>
-                    <p><a href="{{url('alumno/1/beca')}}">Aplicar ahora</a></p>
+                    <p><a href="{{url('alumnos/1/beca')}}" class="alert-link">Aplicar ahora</a></p>
                 </div>
             </div>
         </div>
