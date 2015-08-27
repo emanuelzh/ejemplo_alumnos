@@ -1,3 +1,9 @@
 /**
 Main
 **/
+#main-container {
+    margin-top: 10px;
+}
+footer {
+    font-size: 10pt;
+}

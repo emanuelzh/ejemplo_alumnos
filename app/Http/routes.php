@@ -11,6 +11,13 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+/**
+ * Home
+ */
+Route::get('/','AlumnosController@index');
+
+/**
+ * Resource para alumno
+ */
+Route::resource('alumnos','AlumnosController');
+
