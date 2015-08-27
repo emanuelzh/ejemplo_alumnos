@@ -19,4 +19,11 @@ elixir(function(mix) {
      'main.css'
  ],'public/css/main.css','resources/assets');
 
+ //mezcla los scripts
+ mix.scripts([
+     'bower_components/jquery/dist/jquery.min.js',
+     'bower_components/bootbox.js/bootbox.js',
+     'main.js'
+ ],'public/js/main.js','resources/assets');
+
 });
