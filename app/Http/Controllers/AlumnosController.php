@@ -54,7 +54,10 @@ class AlumnosController extends Controller
     public function show($id)
     {
         //
-        return view('alumnos.show');
+        $alumno = Alumno::find($id);
+        return view('alumnos.show',[
+            'alumno'=>$alumno
+        ]);
     }
 
     /**

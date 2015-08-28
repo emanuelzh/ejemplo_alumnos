@@ -3,8 +3,8 @@
 @section('contenido')
     <div class="row">
         <div class="col-md-12 col-lg-12">
-            <h2>Detalle: Nombre del alumno</h2>
-            <h4></h4>
+            <h2>{{$alumno->nombre}}</h2>
+            <h4>Carrera: {{$alumno->carrera}}</h4>
             <hr>
         </div>
     </div>

@@ -2,25 +2,31 @@
 
 @section('contenido')
 <div class="row">
+    <div class="col-md-12 col-lg-12">
+        <h2>{{$alumno->nombre}}</h2>
+        <hr>
+    </div>
+</div>
+<div class="row">
     <div class="col-lg-9">
         <div class="well bs-component">
             <form class="form-horizontal">
                 <fieldset>
                     <legend>Registrar colegiatura</legend>
                     <div class="form-group">
-                        <label for="inputEmail" class="col-lg-3 control-label">Alumno</label>
-                        <div class="col-lg-8">
-                            <h4>Nombre del alumno</h4>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
                         <label for="select" class="col-lg-3 control-label">Semestre</label>
                         <div class="col-lg-4">
                             <select class="form-control" id="semestre">
+                                <option>1</option>
+                                <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                                 <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
                             </select>
                         </div>
                     </div>
