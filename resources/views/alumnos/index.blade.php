@@ -10,19 +10,19 @@
                     <thead>
                     <th>Nombre</th>
                     <th>Carrera</th>
-                    <th>Semestre</th>
                     <th></th>
                     </thead>
                     <tbody>
+                    @foreach($alumnos as $alumno)
                     <tr>
-                        <td>Jeffrey James</td>
-                        <td>Economia</td>
-                        <td>4</td>
-                        <td>
-                            <a class="btn btn-sm btn-info" href="{{url('alumnos/1')}}"><i class="fa fa-eye"></i> Detalle</a>
-                            <a class="btn btn-sm btn-default" href="{{url('alumnos/1/colegiatura')}}"><i class="fa fa-usd"></i> Registrar colegiatura</a>
+                        <td>{{$alumno->nombre}}</td>
+                        <td>{{$alumno->carrera}}</td>
+                        <td class="actions-column">
+                            <a class="btn btn-sm btn-info" href="{{url('alumnos/'.$alumno->id)}}"><i class="fa fa-eye"></i> Detalle</a>
+                            <a class="btn btn-sm btn-default" href="{{url('alumnos/'.$alumno->id.'/colegiatura')}}"><i class="fa fa-usd"></i> Registrar colegiatura</a>
                         </td>
                     </tr>
+                    @endforeach
                     </tbody>
                 </table>
             </div>

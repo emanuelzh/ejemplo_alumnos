@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
+use App\Alumno;
 
 class AlumnosController extends Controller
 {
@@ -17,7 +18,10 @@ class AlumnosController extends Controller
     public function index()
     {
         //
-        return view('alumnos.index');
+        $alumnos = Alumno::all();
+        return view('alumnos.index',[
+            'alumnos' => $alumnos
+        ]);
     }
 
     /**

@@ -7,3 +7,7 @@ Main
 footer {
     font-size: 10pt;
 }
+
+.actions-column {
+    width: 30%;
+}
