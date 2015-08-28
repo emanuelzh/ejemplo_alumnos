@@ -20,7 +20,7 @@
                         <td>4</td>
                         <td>
                             <a class="btn btn-sm btn-info" href="{{url('alumnos/1')}}"><i class="fa fa-eye"></i> Detalle</a>
-                            <a class="btn btn-sm btn-default" href="{{url('alumnos/1/colegiatura')}}"><i class="fa fa-eye"></i> Detalle</a>
+                            <a class="btn btn-sm btn-default" href="{{url('alumnos/1/colegiatura')}}"><i class="fa fa-usd"></i> Registrar colegiatura</a>
                         </td>
                     </tr>
                     </tbody>

@@ -13,6 +13,13 @@ class CreateAlumnosTable extends Migration
     public function up()
     {
         //
+        Schema::create('alumnos', function(Blueprint $table) {
+            $table->increments('id');
+            $table->text('nombre');
+            $table->text('carrera');
+            $table->integer('semestre');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -22,6 +29,7 @@ class CreateAlumnosTable extends Migration
      */
     public function down()
     {
+        Schema::drop('alumnos');
         //
     }
 }

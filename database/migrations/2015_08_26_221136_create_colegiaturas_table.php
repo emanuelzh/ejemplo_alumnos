@@ -13,6 +13,16 @@ class CreateColegiaturasTable extends Migration
     public function up()
     {
         //
+        Schema::create('colegiaturas', function(Blueprint $table) {
+            $table->increments('id');
+            $table->integer('alumno_id');
+            $table->integer('semestre');
+            $table->double('promedio');
+            $table->double('monto_colegiatura');
+            $table->double('porcentaje_beca');
+            $table->double('monto_pagable');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -23,5 +33,6 @@ class CreateColegiaturasTable extends Migration
     public function down()
     {
         //
+        Schema::drop('colegiaturas');
     }
 }

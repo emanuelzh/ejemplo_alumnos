@@ -19,8 +19,8 @@ Route::get('/','AlumnosController@index');
 /**
  * rutas para aplicar la beca
  */
-Route::get('alumnos/{id}/colegiatura','AlumnosController@beca');
-Route::post('alumnos/{id}/colegiatura','AlumnosController@aplicar_beca');
+Route::get('alumnos/{id}/colegiatura','ColegiaturasController@create');
+Route::post('alumnos/{id}/colegiatura','ColegiaturasController@store');
 
 /**
  * Resource para alumno
