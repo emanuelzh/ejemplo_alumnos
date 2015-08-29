@@ -23,6 +23,7 @@ elixir(function(mix) {
     mix.scripts([
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootbox.js/bootbox.js',
+        'bower_components/vue/dist/vue.js',
         'main.js'
     ],'public/js/main.js','resources/assets');
 
