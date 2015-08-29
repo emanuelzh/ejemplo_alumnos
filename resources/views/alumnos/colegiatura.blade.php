@@ -95,6 +95,10 @@
 
     vm.$watch('promedio',function(val){
         console.log(val);
+        //utilizamos valores en esta table
+        //realmente el incremento cúbico no es real y la formula
+        //fue obtenida de ortra forma, revisar
+        //https://gist.github.com/emanuelzh/0ac65a18a807acec9144
         if(val >= 8 && val <=10) {
             if(val >= 8)
                 this.beca = 20;
