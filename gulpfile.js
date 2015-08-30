@@ -24,7 +24,8 @@ elixir(function(mix) {
         'bower_components/jquery/dist/jquery.js',
         'bower_components/bootbox.js/bootbox.js',
         'bower_components/vue/dist/vue.js',
-        'main.js'
+        'bower_components/vue-resource/dist/vue-resource.js',
+	'main.js'
     ],'public/js/main.js','resources/assets');
 
     //copiar las fuentes para fontawesome
