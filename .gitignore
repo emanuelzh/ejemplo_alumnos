@@ -2,6 +2,7 @@
 /node_modules
 /resources/assets/bower_components
 /.idea
+/storage/database.sqlite
 Homestead.yaml
 composer.lock
 .env

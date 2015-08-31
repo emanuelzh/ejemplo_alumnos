@@ -86,7 +86,7 @@
         },
        computed : {
            errors : function() {
-               if(this.colegiatura.promedio >= 1 && this.colegiatura.colegiatura_final >=1)
+               if(this.colegiatura.promedio >= 1 && this.colegiatura.colegiatura_base >=1)
                    return false;
                else
                    return true;
@@ -104,8 +104,9 @@
                     alert(this.colegiatura.id);
                 this.$http.post('',this.colegiatura,function(response){
                     if(response == 'ok') {
-                        bootbox.alert('Colegiatura registrada !');
-                        document.location = '{{url('/')}}'
+                        bootbox.alert('Colegiatura registrada !',function(){
+                            document.location = '{{url('/')}}';
+                        });
                     } else {
                         bootbox.alert('ERROR. No se pudo registrar la colegiatura.');
                     }
