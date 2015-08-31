@@ -105,7 +105,7 @@
                 this.$http.post('',this.colegiatura,function(response){
                     if(response == 'ok') {
                         bootbox.alert('Colegiatura registrada !');
-                        document.href = '{{url('/')}}'
+                        document.location = '{{url('/')}}'
                     } else {
                         bootbox.alert('ERROR. No se pudo registrar la colegiatura.');
                     }
