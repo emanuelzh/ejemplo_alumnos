@@ -46,8 +46,14 @@ class ColegiaturasController extends Controller
      */
     public function store($id, Request $request)
     {
-        //
-        $colegiatura = Colegiatura::create($request->all());
+        $colegiatura = new Colegiatura;
+        $colegiatura->alumno_id = $id;
+        $colegiatura->semestre = 0;
+        $colegiatura->promedio = $request->input('promedio');
+        $colegiatura->monto_colegiatura = $request->input('colegiatura_base');
+        $colegiatura->porcentaje_beca = $request->input('beca');
+        $colegiatura->monto_pagable = $request->input('colegiatura_final');
+        $colegiatura->save();
 
         return 'ok';
     }

@@ -22,6 +22,7 @@ elixir(function(mix) {
     //mezcla los scripts
     mix.scripts([
         'bower_components/jquery/dist/jquery.js',
+        'bower_components/bootstrap/dist/js/bootstrap.js',
         'bower_components/bootbox.js/bootbox.js',
         'bower_components/vue/dist/vue.js',
         'bower_components/vue-resource/dist/vue-resource.js',
